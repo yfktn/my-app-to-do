@@ -45,7 +45,7 @@ class AppTodoRepository implements AppTodoInterface {
 
     public function index()
     {
-        return AppTodo::all();
+        return AppTodo::orderBy('status', 'desc')->orderBy('created_at', 'desc')->get();
     }
 
     /**

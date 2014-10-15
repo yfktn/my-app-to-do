@@ -23,7 +23,7 @@ class AppTodoModel extends \Eloquent {
     );
 
     static $enum_status = array(
-        'progress'=>'Sedang Proses',
+        'progress'=>'In Progress',
         'done'=>'Selesai'
     );
 
