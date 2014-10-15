@@ -1,0 +1,24 @@
+{
+    "name": "panatau/my-app-to-do",
+    "description": "Package untuk menambahkan fasilitas apa yang harus dilakukan, tracking terhadap project.",
+    "authors": [
+        {
+            "name": "Yan Friskantoni",
+            "email": "friskantoni@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Panatau\\MyAppToDo": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
