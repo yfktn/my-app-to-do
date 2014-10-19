@@ -5,6 +5,7 @@
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Judul</th>
             <th>Penjelasan</th>
             <th>Jenis</th>
@@ -14,6 +15,7 @@
     <tbody>
         @foreach($todo as $t)
         <tr class='{{ $t->statusPure=='done'?'success':'warning' }}'>
+            <td>{{ $t->id }}</td>
             <td>{{ $t->title }}</td>
             <td>{{ $t->description }}</td>
             <td>{{ $t->type }}</td>
