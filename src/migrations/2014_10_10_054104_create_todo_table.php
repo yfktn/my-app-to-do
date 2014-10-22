@@ -28,7 +28,8 @@ class CreateTodoTable extends Migration {
             ))->default('bug');
             $table->enum('status', array(
                 'progress',
-                'done'
+                'done',
+                'skip'
             ))->default('progress');
             $table->date("expired_at")->nullable();
             $table->timestamps();

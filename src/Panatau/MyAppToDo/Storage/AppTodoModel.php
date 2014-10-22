@@ -24,7 +24,8 @@ class AppTodoModel extends \Eloquent {
 
     static $enum_status = array(
         'progress'=>'In Progress',
-        'done'=>'Selesai'
+        'done'=>'Selesai',
+        'skip' => 'Z-Diabaikan'
     );
 
     public function getTypeAttribute($value) {
